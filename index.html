@@ -1,9 +1,192 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página de inicio: Club Lector</title>
+    <meta
+      name="description"
+      content="Club Lector organiza clubes de lectura virtual de diversos géneros y en diferentes lenguas, para los amantes de la lectura que quieran compartir reflexiones y debatir sobre los libros que les interesan sin necesidad de acudir a un espacio físico."
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
-  <body>
-    <h1>hello woprld</h1>
-    <script src="./index.js"></script>
+  <body class="gridContainer">
+    <header>
+      <a class="sr" href="#main">Saltar al contenido principal</a>
+      <div class="container">
+        <div class="flexContainerHeader">
+          <input
+            type="submit"
+            value="Iniciar sesión"
+            onClick="location.href=''"
+          />
+          <h1 class="banner">
+            <a href="index.html">club<i class="font-light">lector</i></a>
+          </h1>
+          <nav class="header">
+            <ul>
+              <li>
+                <a href="clubes-tematicos.html">CLUBES TEMÁTICOS</a>
+              </li>
+              <li><a href="lecturas-2020.html">LECTURAS 2020</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mainContainer">
+        <h2 class="center">¿Qué es Club Lector?</h2>
+        <p class="center">
+          Club Lector organiza clubes de lectura virtual de diversos géneros y
+          en diferentes lenguas, para los amantes de la lectura que quieran
+          compartir reflexiones y debatir sobre los libros que les interesan sin
+          necesidad de acudir a un espacio físico..
+        </p>
+        <section>
+          <div>
+            <h2 class="center">¿Cómo funciona?</h2>
+          </div>
+          <div class="flexContainer">
+            <div>
+              <img
+                class="howto-img"
+                src="img/howto-register.png"
+                alt="Regístrate "
+              />
+              <p class="center">Regístrate</p>
+            </div>
+            <div>
+              <img
+                class="howto-img"
+                src="img/howto-club.png"
+                alt="Inscríbete"
+              />
+              <p class="center">Inscríbete en un</p>
+              <p class="center">club de lectura</p>
+            </div>
+            <div>
+              <img
+                class="howto-img"
+                src="img/howto-book.png"
+                alt="Escoge un libro"
+              />
+              <p class="center">Escoge un libro</p>
+            </div>
+            <div>
+              <img
+                class="howto-img"
+                src="img/howto-speech.png"
+                alt="Deisftura del debate"
+              />
+              <p class="center">Disfruta del debate</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="center">Únete al club</h2>
+          <div class="flexContainer">
+            <div>
+              <h2 class="banner">Estamos leyendo tu próximo libro favorito.</h2>
+              <h2 class="banner">¿Te lo perderás?</h2>
+            </div>
+            <div class="form">
+              <form name="colabora" action="#" method="post">
+                <ul>
+                  <li class="controlInlineHalf">
+                    <input
+                      type="text"
+                      name="nombre"
+                      id="nombre"
+                      placeholder="Nombre"
+                      pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}"
+                      title="Solo caracteres alfabéticos. Un mínimo de 2 y un máximo de 64 caracteres"
+                      required
+                    />
+                  </li>
+                  <li class="controlInlineHalf">
+                    <input
+                      type="email"
+                      name="correo"
+                      id="correo"
+                      placeholder="Correo electrónico"
+                      required
+                      class="halfInLine"
+                    />
+                  </li>
+                  <li class="controlInlineHalf">
+                    <input
+                      type="password"
+                      name="contraseña"
+                      id="password"
+                      placeholder="Contraseña"
+                      required
+                    />
+                  </li>
+                </ul>
+                <div class="outFieldset">
+                  <p class="infoLegal">
+                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <b>Club Lector</b>.
+                    <b>Finalidades:</b> recogida de datos para la inscripción
+                    como socio del interesado.
+                    <b>Legitimación:</b> Consentimiento del interesado.
+                    <b>Destinatarios:</b> No están previstas cesiones de datos a
+                    terceros, excepto obligación legal. <b>Derechos:</b> Puede
+                    retirar su consentimineto en cualquier momento, así como
+                    acceder, rectificar, suprimir sus datos y otros derechos
+                    dirigiéndose a clublector@clublector.org.
+                    <b>Información Adicional:</b> Puede ampliar la información
+                    en el enlace de <a href="">Aviso Legal</a> y
+                    <a href="">Política de privacidad</a>.
+                  </p>
+                  <ul>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="politica"
+                        id="politica"
+                        value="Acceptacio de política i avís"
+                        required
+                      />
+                      <label for="politica"
+                        >He leído y acepto la política de privacidad
+                      </label>
+                    </li>
+                  </ul>
+                  <input type="submit" value="REGÍSTRAME" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="gridContainer">
+          <div>
+            <ul>
+              <li><a href="">Sobre nosotros</a></li>
+              <li><a href="">Aviso legal</a></li>
+              <li><a href="">Política de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Youtube</a></li>
+            </ul>
+          </div>
+          <div>
+            <p></p>
+            <p>2020 &copy; Juan Alfonso Merino Beltrán</p>
+            <p>Iconos <a href="https://www.faticon.com">flaticon.com</a></p>
+            <p>Imágenes <a href="https://unsplash.com">unsplash.com</a></p>
+          </div>
+        </div>
+        <p class="right"><a href="#">&xwedge;</a></p>
+      </div>
+    </footer>
   </body>
 </html>
