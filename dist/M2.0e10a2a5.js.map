@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["name","console","log"],"mappings":";AAAA,IAAMA,EAAO,QAIbC,QAAQC,IAAcF,UAAAA,OAAAA","file":"M2.0e10a2a5.js","sourceRoot":"..","sourcesContent":["const name = \"world\";\r\n\r\n\r\n\r\nconsole.log(`Hellow ${name}`);\r\n"]}
