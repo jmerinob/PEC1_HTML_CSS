@@ -162,7 +162,8 @@ footer {
 }
 
 .howto-img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 13rem;
   padding: 0.5rem;
   display: block;
@@ -219,7 +220,7 @@ h1.banner {
 }
 
 h1.banner::before {
-  background-image: url(/img/clublector-isologo.png);
+  background-image: url(/clublector-isologo.6f4972b7.png);
   background-size: 100%;
   display: inline-block;
   width: 2rem;
@@ -498,7 +499,8 @@ nav.list h2 {
 }
 
 img.book {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: block;
   margin: auto;
 }
@@ -726,3 +728,6 @@ Media Queries en función del tamaño del viewport
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 }
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
