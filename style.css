@@ -9,7 +9,7 @@
   --contrast-color: rgb(10, 218, 255);
   --bg-dark-color: rgb(0, 0, 0);
   --bg-light-color: rgba(0, 0, 0, 0.1);
-  --header-background-color: rgb(181, 255, 235);
+  --header-background-color: rgb(254, 255, 255);
   --body-background-color: rgb(219, 219, 219);
   --footer-background-color: rgb(116, 116, 116);
 }
@@ -169,7 +169,7 @@ footer {
 
 .howto-img {
   object-fit: contain;
-  height: 13rem;
+  height: 25vw;
   padding: 0.5rem;
   display: block;
   margin: auto;
@@ -224,18 +224,6 @@ h1.banner {
   font-family: "Bungee Shade", serif;
 }
 
-h1.banner::before {
-  background-image: url(/img/bebes.png);
-  background-size: 100%;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 4rem;
-  height: 4rem;
-  margin-left: 10px;
-  content: " ";
-}
-
 h1.banner a {
   color: inherit;
   border: none;
@@ -247,63 +235,6 @@ h2.banner {
   font-weight: 400;
   font-family: "Butterfly Kids", serif;
 }
-
-/****************************
-Página de inicio
-*****************************/
-body.home {
-  background-image: url(./img/insung-yoon-iioAHjNYA_o-unsplash_medium.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  color: white;
-}
-
-body.home header {
-  background-color: transparent;
-}
-
-body.home main {
-  padding-top: 10vh;
-  height: 65vh;
-}
-
-body.home footer {
-  background-color: transparent;
-}
-
-body.home h1 {
-  font-size: 6rem;
-  font-family: "Bungee Shade", serif;
-}
-
-body.home h1::before {
-  padding-right: 15px;
-}
-
-body.home a {
-  color: inherit;
-  border: none;
-}
-
-body.home a:hover {
-  border: none;
-  color: var(--contrast-color);
-}
-
-body.home nav ul li {
-  font-size: 1.3rem;
-}
-
-body.home main p {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-body.home footer p {
-  margin-bottom: 0;
-}
-
 /*************************
 Contenidos del footer
 **************************/
@@ -408,6 +339,16 @@ p.banner {
 }
 p.infoLegal {
   font-size: 0.65rem;
+}
+
+.main {
+  background-image: url(./img/insung-yoon-iioAHjNYA_o-unsplash_large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-left: 0vw;
+  margin-bottom: 0;
+  overflow: hidden;
 }
 /****************************
 Formulario 
