@@ -137,6 +137,7 @@ footer {
   padding-right: 1rem;
   padding-left: 1rem;
   width: 100%;
+  min-height: 80vh;
 }
 .container {
   margin-right: auto;
@@ -222,7 +223,7 @@ Titular del sitio
 h1.banner {
   flex: 0.95;
   display: inline-block;
-  font-family: "Bungee Shade", serif;
+  font-family: "Butterfly Kids", serif;
 }
 
 h1.banner a {
