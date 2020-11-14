@@ -6,11 +6,11 @@
 
 :root {
   --text-color: rgb(24, 98, 128);
-  --contrast-color: rgb(10, 218, 255);
+  --contrast-color: rgb(24, 98, 128);
   --bg-dark-color: rgb(0, 0, 0);
   --bg-light-color: rgba(0, 0, 0, 0.1);
   --header-background-color: rgb(254, 255, 255);
-  --body-background-color: rgb(255, 242, 251);
+  --body-background-color: rgb(235, 255, 255);
   --footer-background-color: rgb(116, 116, 116);
 }
 
@@ -776,8 +776,8 @@ Media Queries en función del tamaño del viewport
   background-color: var(--body-background-color);
   width: 80vw;
   padding: 10px 20px;
-  margin: 20% auto;
-  position: relative;
+  margin: 25vw auto;
+  position: 25vw;
 }
 .modal {
   background-color: rgba(0, 0, 0, 0.8);
@@ -788,7 +788,7 @@ Media Queries en función del tamaño del viewport
   left: 0;
   opacity: 0;
   pointer-events: none;
-  /*transition: all 1s;*/
+  transition: all 2s;
   z-index: 1000;
 }
 #miModal:target {
