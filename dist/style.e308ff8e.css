@@ -608,13 +608,13 @@ dd {
 }
 
 img.float-round {
-  float: left;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
+  float: unset;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 20%;
   -webkit-shape-outside: circle();
           shape-outside: circle();
-  padding-right: 1rem;
+  padding-right: 0rem;
 }
 
 nav.breadcrum {
