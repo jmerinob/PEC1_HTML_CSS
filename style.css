@@ -4,13 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 
-root {
+:root {
   --text-color: rgb(24, 98, 128);
   --contrast-color: rgb(10, 218, 255);
   --bg-dark-color: rgb(0, 0, 0);
   --bg-light-color: rgba(0, 0, 0, 0.1);
-  --body-background-color: rgb(157, 187, 179);
-  --footer-background-color: rgb(67, 58, 68);
+  --header-background-color: rgb(181, 255, 235);
+  --body-background-color: rgb(219, 219, 219);
+  --footer-background-color: rgb(116, 116, 116);
 }
 
 * {
@@ -24,7 +25,7 @@ body {
   font-weight: 400;
   color: var(--text-color);
   line-height: 1.5;
-  background: var(--body-background-color);
+  background-color: var(--body-background-color);
 }
 
 h1,
@@ -120,7 +121,7 @@ header {
   padding-top: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 1000;
-  background: var(--header-background-color);
+  background-color: var(--header-background-color);
 }
 
 footer {
@@ -227,9 +228,11 @@ h1.banner::before {
   background-image: url(/img/bebes.png);
   background-size: 100%;
   display: inline-block;
-  width: 2.5rem;
-  height: 2.3rem;
-  margin-left: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 4rem;
+  height: 4rem;
+  margin-left: 10px;
   content: " ";
 }
 
@@ -243,6 +246,62 @@ h2.banner {
   margin-top: 0rem;
   font-weight: 400;
   font-family: "Butterfly Kids", serif;
+}
+
+/****************************
+Página de inicio
+*****************************/
+body.home {
+  background-image: url(./img/insung-yoon-iioAHjNYA_o-unsplash_medium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: white;
+}
+
+body.home header {
+  background-color: transparent;
+}
+
+body.home main {
+  padding-top: 10vh;
+  height: 65vh;
+}
+
+body.home footer {
+  background-color: transparent;
+}
+
+body.home h1 {
+  font-size: 6rem;
+  font-family: "Bungee Shade", serif;
+}
+
+body.home h1::before {
+  padding-right: 15px;
+}
+
+body.home a {
+  color: inherit;
+  border: none;
+}
+
+body.home a:hover {
+  border: none;
+  color: var(--contrast-color);
+}
+
+body.home nav ul li {
+  font-size: 1.3rem;
+}
+
+body.home main p {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+body.home footer p {
+  margin-bottom: 0;
 }
 
 /*************************
@@ -731,47 +790,4 @@ Media Queries en función del tamaño del viewport
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-}
-
-/* Modal styles */
-.modalDialog {
-  position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  pointer-events: none;
-}
-.modalDialog:target {
-  opacity: 1;
-  pointer-events: auto;
-}
-.modalDialog > div {
-  width: 400px;
-  position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  background: #fff;
-  transition: opacity 400ms ease-in;
-}
-.close {
-  background: #ffffff;
-  color: #ffffff;
-  line-height: 50px;
-  position: absolute;
-  right: -12px;
-  text-align: center;
-  top: -10px;
-  width: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 25px;
-  box-shadow: 1px 1px 3px #000;
-}
-.close:hover {
-  background: #ff0000;
 }
