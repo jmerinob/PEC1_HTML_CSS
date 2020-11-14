@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./img\\insung-yoon-iioAHjNYA_o-unsplash_large.jpg":[["insung-yoon-iioAHjNYA_o-unsplash_large.7741bd70.jpg","img/insung-yoon-iioAHjNYA_o-unsplash_large.jpg"],"img/insung-yoon-iioAHjNYA_o-unsplash_large.jpg"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
