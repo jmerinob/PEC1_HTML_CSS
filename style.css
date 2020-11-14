@@ -10,7 +10,7 @@
   --bg-dark-color: rgb(0, 0, 0);
   --bg-light-color: rgba(0, 0, 0, 0.1);
   --header-background-color: rgb(254, 255, 255);
-  --body-background-color: rgb(219, 219, 219);
+  --body-background-color: rgb(255, 242, 251);
   --footer-background-color: rgb(116, 116, 116);
 }
 
@@ -63,6 +63,7 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
+  font-family: "Butterfly Kids";
 }
 
 h3 {
@@ -137,7 +138,7 @@ footer {
   padding-right: 1rem;
   padding-left: 1rem;
   width: 100%;
-  min-height: 80vh;
+  min-height: 60vh;
 }
 .container {
   margin-right: auto;
@@ -621,6 +622,22 @@ nav.breadcrum ul li:last-child {
   text-align: left;
 }
 
+.video-fluid {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-fluid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /****************************
 Media Queries en función del tamaño del viewport
 *****************************/
@@ -741,4 +758,28 @@ Media Queries en función del tamaño del viewport
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+}
+
+/*Estilos ventana modal*/
+.modal-contenido {
+  background-color: aqua;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+#miModal:target {
+  opacity: 1;
+  pointer-events: auto;
 }
