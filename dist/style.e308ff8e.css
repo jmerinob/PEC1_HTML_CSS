@@ -178,10 +178,19 @@ footer {
       justify-content: space-between;
 }
 
-.howto-img {
+.menu-img {
   -o-object-fit: contain;
      object-fit: contain;
   height: 50vw;
+  padding: 2rem;
+  display: block;
+  margin: auto;
+}
+
+.detail-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 80vw;
   padding: 2rem;
   display: block;
   margin: auto;
@@ -555,13 +564,14 @@ img.book {
 .img-texto .informacion {
   left: 0;
   width: 100%;
-  /*z-index: 999;*/
+  z-index: 999;
   background: white;
   opacity: 0.8;
   padding: 10px 10px 10px 10px;
   font-family: sans-serif;
-  max-height: 112px;
+  max-height: 200px;
   overflow: auto;
+  margin-bottom: 12px;
 }
 
 .img-texto .informacion h3 {
