@@ -20,7 +20,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -153,33 +154,43 @@ footer {
 
 .flexContainer,
 .flexContainerHeader {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .flexContainer > div.smallFlex {
-  -ms-flex: 0.2;
-      flex: 0.2;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
 }
 
 .flexContainer > div.mediumFlex {
-  -ms-flex: 0.4;
-      flex: 0.4;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
 }
 
 .flexContainer-spBtw {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-img {
@@ -214,8 +225,9 @@ body.gridContainer {
 }
 
 .flex-1 {
-  -ms-flex: 1;
-      flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .video-fluid {
@@ -238,8 +250,9 @@ body.gridContainer {
 Estilos para header
 *****************************/
 .flexContainerHeader {
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .font-light {
@@ -247,8 +260,9 @@ Estilos para header
 }
 
 h1.banner {
-  -ms-flex: 0.95;
-      flex: 0.95;
+  -webkit-box-flex: 0.95;
+      -ms-flex: 0.95;
+          flex: 0.95;
   display: inline-block;
   font-family: "Butterfly Kids", serif;
 }
@@ -256,8 +270,9 @@ h1.banner {
 h1.banner a {
   color: inherit;
   border: none;
-  -ms-flex-order: 3;
-      order: 3;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 h2.banner {
@@ -303,8 +318,10 @@ footer a:hover {
 
 footer ul {
   list-style-type: none;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer ul li {
@@ -324,8 +341,9 @@ nav {
   text-align: left;
   padding: 10px;
   margin: 10px;
-  -ms-flex: 1;
-      flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 nav ul li {
@@ -399,8 +417,9 @@ Formulario
 form {
   width: 100%;
   font-size: 1.2rem;
-  -ms-flex: 1;
-      flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 fieldset {
@@ -487,7 +506,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  box-shadow: 0 7px 14px var(--contrast-color), 0 3px 6px transparent;
+  -webkit-box-shadow: 0 7px 14px var(--contrast-color), 0 3px 6px transparent;
+          box-shadow: 0 7px 14px var(--contrast-color), 0 3px 6px transparent;
   cursor: pointer;
   color: rgb(2, 15, 20);
 }
@@ -538,7 +558,8 @@ img.book {
   margin-bottom: 5vw;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 0px 86px -80px black;
+  -webkit-box-shadow: 0px 0px 86px -80px black;
+          box-shadow: 0px 0px 86px -80px black;
 }
 
 .img-texto img {
@@ -606,8 +627,7 @@ img.float-round {
   width: 25vw;
   height: 25vw;
   border-radius: 20%;
-  -webkit-shape-outside: circle();
-          shape-outside: circle();
+  shape-outside: circle();
   padding-right: 0rem;
 }
 
@@ -654,19 +674,23 @@ Media Queries en función del tamaño del viewport
   .flexContainer,
   .flexContainer-spBtw,
   .flexContainerHeader {
-    -ms-flex-direction: row;
-        flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   input[type="submit"] {
-    -ms-flex-order: 3;
-        order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 
   .flexContainer > div {
     margin-bottom: 0;
-    -ms-flex: 1;
-        flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 
   footer > .container > .gridContainer {
@@ -674,8 +698,9 @@ Media Queries en función del tamaño del viewport
   }
 
   .button {
-    -ms-flex-order: 3;
-        order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   nav.header ul li {
     display: inline-block;
@@ -691,8 +716,10 @@ Media Queries en función del tamaño del viewport
   }
 
   footer.flexContainer {
-    -ms-flex-direction: row;
-        flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   footer ul li {
@@ -725,7 +752,8 @@ Media Queries en función del tamaño del viewport
     margin-bottom: 1vw;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 0px 86px -80px black;
+    -webkit-box-shadow: 0px 0px 86px -80px black;
+            box-shadow: 0px 0px 86px -80px black;
   }
 
   .menu-img {
@@ -750,8 +778,9 @@ Media Queries en función del tamaño del viewport
   }
 
   .flex-1 {
-    -ms-flex: 1;
-        flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin-top: 0rem;
     margin-left: 3rem;
   }
@@ -769,31 +798,6 @@ Media Queries en función del tamaño del viewport
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-}
-
-/*Estilos ventana modal*/
-.modal-contenido {
-  background-color: var(--body-background-color);
-  width: 80vw;
-  padding: 10px 20px;
-  margin: 25vw auto;
-  position: 25vw;
-}
-.modal {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 2s;
-  z-index: 1000;
-}
-#miModal:target {
-  opacity: 1;
-  pointer-events: auto;
 }
 
 
