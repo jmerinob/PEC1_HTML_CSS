@@ -1,9 +1,11 @@
-/*Estilos para Club del lector */
+/*Estilos para Lact BOOK*/
 
+/****fuentes importadas******/
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 
+/*****variables color*****/
 :root {
   --text-color: rgb(24, 98, 128);
   --contrast-color: rgb(24, 98, 128);
@@ -14,6 +16,7 @@
   --footer-background-color: rgb(116, 116, 116);
 }
 
+/*selectores de elementos básicos*/
 * {
   margin: 0;
   padding: 0;
@@ -116,7 +119,7 @@ figcaption {
 }
 
 /****************************
-Contenedores del sitio
+Contenedores
 *****************************/
 header {
   padding-top: 1rem;
@@ -127,7 +130,7 @@ header {
 
 footer {
   padding-top: 3rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.5rem;
   background-color: var(--footer-background-color);
   color: #fff;
 }
@@ -137,6 +140,7 @@ footer {
   margin-left: auto;
   padding-right: 1rem;
   padding-left: 1rem;
+  padding-bottom: 5rem;
   width: 100%;
   min-height: 60vh;
 }
@@ -171,8 +175,8 @@ footer {
 
 .menu-img {
   object-fit: contain;
-  height: 50vw;
-  padding: 2rem;
+  height: 60vw;
+  padding: 3rem;
   display: block;
   margin: auto;
 }
@@ -219,7 +223,7 @@ body.gridContainer {
 }
 
 /****************************
-Titular del sitio
+Estilos para header
 *****************************/
 .flexContainerHeader {
   align-items: center;
@@ -255,7 +259,7 @@ h2.banner {
   width: 10vh;
 }
 /*************************
-Contenidos del footer
+Estilos para footer
 **************************/
 
 footer.gridContainerontainer {
@@ -297,7 +301,7 @@ footer .gridContainer div:nth-child(3) {
 }
 
 /****************************
-Menú de navegación del sitio
+Menú de navegación
 *****************************/
 nav {
   text-align: left;
@@ -344,10 +348,6 @@ nav li.active {
 nav li.active::before {
   font-weight: 400;
 }
-
-/****************************
-Artículos 
-****************************/
 
 /****************************
 Página de inicio
@@ -472,18 +472,6 @@ input[type="submit"]:hover {
   cursor: pointer;
   color: rgb(2, 15, 20);
 }
-/***************************
-Clubes temáticos
-***************************/
-.clubTitle:before {
-  content: "\25AC";
-  padding-right: 0.5rem;
-}
-
-.club-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /****************************
 Lecturas 2020
@@ -493,10 +481,6 @@ Lecturas 2020
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-}
-.clubTitle2:before {
-  content: "\25AC\25AC";
-  padding-right: 0.5rem;
 }
 
 ul li.bookList {
@@ -678,6 +662,7 @@ Media Queries en función del tamaño del viewport
 
   .mainContainer {
     width: 80%;
+    padding-bottom: 25rem;
   }
 
   footer.flexContainer {
@@ -716,9 +701,14 @@ Media Queries en función del tamaño del viewport
     margin-right: auto;
     box-shadow: 0px 0px 86px -80px black;
   }
-  .howto-img {
-    height: 25vw;
+
+  .menu-img {
+    height: 20vw;
     padding: 3rem;
+  }
+
+  .detail-img {
+    height: 20vw;
   }
 
   .img-texto .informacion h2 {
